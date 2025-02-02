@@ -4,7 +4,7 @@ import pandas as pd
 app = FastAPI()
 
 # Load the data
-data = pd.read_csv('')
+data = pd.read_csv('api/q-vercel-python.json')
 
 @app.get("/api")
 async def get_marks(name: list):
